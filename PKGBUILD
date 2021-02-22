@@ -2,7 +2,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.10.12
+pkgver=5.10.17
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -25,7 +25,6 @@ source=(
   # Arch Linux patches
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
   0002-HID-quirks-Add-Apple-Magic-Trackpad-2-to-hid_have_sp.patch
-  0003-iwlwifi-provide-gso_type-to-GSO-packets.patch
 
   # Hack for AMD DC eDP link rate bug
   2001-drm-amd-display-Force-link_rate-as-LINK_RATE_RBR2-fo.patch
@@ -48,10 +47,6 @@ source=(
   4007-HID-apple-Add-support-for-MacBookAir9-1-keyboard-tra.patch
   4008-HID-apple-Add-support-for-MacBookPro16-1-keyboard-tr.patch
 
-  # Broadcom Wifi rambase debugging additions
-  #5001-brcmfmac-move-brcmf_mp_device-into-its-own-header.patch
-  #5002-brcmfmac-Add-ability-to-manually-specify-FW-rambase-.patch
-
   # MBP Peripheral support
   6001-media-uvcvideo-Add-support-for-Apple-T2-attached-iSi.patch	# UVC Camera support
 
@@ -59,8 +54,6 @@ source=(
   7001-drm-i915-fbdev-Discard-BIOS-framebuffers-exceeding-h.patch
 
   # Broadcom WIFI/BT device support
-  #8001-brcmfmac-Add-initial-support-for-the-BRCM4355.patch
-  #8002-brcmfmac-Add-initial-support-for-the-BRCM4377.patch
   wifi-bigsur.patch
 )
 
@@ -239,13 +232,11 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-
-md5sums=('34c93a9e96f597872e3f2a86b87f33bf'
+md5sums=('4908707ed841923d8d1814130d5c380f'
          'SKIP'
          '2c13180d8d8b8986dd69ec1f379898d7'
          'd991e64e837e7d32a8fedb0022b4ce74'
          'fa19116d53bd4cb9a097f480b241cc19'
-         '5fa846a7b65033d7210867cd615d86ab'
          '4e95da49152e777a7451f8ff3034070b'
          'a248af1edd4dcc2cf83ffd88ce1e6e96'
          '4545735c36000c0615be989948a79aba'
