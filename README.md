@@ -12,10 +12,8 @@ You should be able to use this directly on Arch or Manjaro as below.
 
 This repo has been updated so you should no longer have to remove any patches yourself if attempting a build on another distro.
 
-```git clone https://github.com/jamlam/mbp-16.1-linux-wifi.git
-
- cd mbp-16.1-linux-wifi.git
- 
- makepkg -si```
+    git clone https://github.com/jamlam/mbp-16.1-linux-wifi.git
+    cd mbp-16.1-linux-wifi.git
+    makepkg -si
 
 
