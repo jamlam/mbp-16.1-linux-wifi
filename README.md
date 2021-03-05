@@ -8,10 +8,14 @@ This is a very unsupported quick fix to get Wifi working on some MBP devices usi
 
 In order to get the patch to apply cleanly I've needed to remove some of the patches to support other BRCM devices in the various Macbooks. I've tested this on an MBP16.1, it should work on other models with the BRCM4364 but I've not tested it myself. For more info on a longer term solution for these cards have a look here http://t2linux.org/
 
-You should be able to use this directly on Arch or Manjaro as below
-
-git clone https://github.com/jamlam/mbp-16.1-linux-wifi.git
-cd mbp-16.1-linux-wifi.git
-makepkg -si
+You should be able to use this directly on Arch or Manjaro as below. 
 
 This repo has been updated so you should no longer have to remove any patches yourself if attempting a build on another distro.
+
+```git clone https://github.com/jamlam/mbp-16.1-linux-wifi.git
+
+ cd mbp-16.1-linux-wifi.git
+ 
+ makepkg -si```
+
+
