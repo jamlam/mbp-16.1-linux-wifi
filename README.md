@@ -1,8 +1,7 @@
-mbp-16.1-linux-wifi
+mbp-16.1-linux-wifi - 5.10.28
 ==============
 
 Arch Linux package for Linux kernel with bleeding edge 2018+ MacBook Pro support.
-
 
 This is a very unsupported quick fix to get Wifi working on some MBP devices using the Corellium patch from here (https://github.com/corellium/linux-m1/commit/02ad06fbf2b35916ee329a9bb80d73840d6e2973.patch?branch=02ad06fbf2b35916ee329a9bb80d73840d6e2973&diff=unified) and Aunali1s fantastic work here (https://github.com/aunali1/linux-mbp-arch). 
 
