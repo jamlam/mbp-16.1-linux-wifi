@@ -2,7 +2,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.10.17
+pkgver=5.10.28
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -232,7 +232,8 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-md5sums=('4908707ed841923d8d1814130d5c380f'
+
+md5sums=('e537f7035e3ae63ea494c83015af1447'
          'SKIP'
          '2c13180d8d8b8986dd69ec1f379898d7'
          'd991e64e837e7d32a8fedb0022b4ce74'
