@@ -2,7 +2,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.10.33
+pkgver=5.12.5
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -44,9 +44,10 @@ source=(
   4004-HID-apple-Add-support-for-MacBookPro15-1-keyboard-tr.patch
   4005-HID-apple-Add-support-for-MacBookPro15-4-keyboard-tr.patch
   4006-HID-apple-Add-support-for-MacBookPro16-2-keyboard-tr.patch
-  4007-HID-apple-Add-support-for-MacBookAir9-1-keyboard-tra.patch
-  4008-HID-apple-Add-support-for-MacBookPro16-1-keyboard-tr.patch
-
+  4007-HID-apple-Add-support-for-MacBookPro16-3-keyboard-tr.patch
+  4008-HID-apple-Add-support-for-MacBookAir9-1-keyboard-tra.patch
+  4009-HID-apple-Add-support-for-MacBookPro16-1-keyboard-tr.patch
+  
   # MBP Peripheral support
   6001-media-uvcvideo-Add-support-for-Apple-T2-attached-iSi.patch	# UVC Camera support
 
@@ -231,30 +232,27 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-
-
-
-
-md5sums=('4a3d219c4cb2eb386ec5aeff4877ae07'
+md5sums=('04d22ba1dc23ea068b6669d2f603ae4b'
          'SKIP'
-         '2c13180d8d8b8986dd69ec1f379898d7'
-         'd991e64e837e7d32a8fedb0022b4ce74'
-         'fa19116d53bd4cb9a097f480b241cc19'
+         '1e81a7ec51b2824fa0b4adf8371482b1'
+         '080dee4dd14a43c2c131aa907b5a6045'
+         'a0b6081a5f114a0bf6241bd131f3b360'
          '4e95da49152e777a7451f8ff3034070b'
-         'a248af1edd4dcc2cf83ffd88ce1e6e96'
+         '8abebb5f4b905792d07cf6e3dd5cc145'
          '4545735c36000c0615be989948a79aba'
          'aa562bcf187c5ce9dd9282737dffcaa9'
          '5f7b6f9b4cc4ac46b3678c95f3ffe4a3'
          '240b3d1e13f183e1c9a8a384583a7003'
          '4112d17440b0c43fb6ef21128b991f8c'
-         '7c9264ad45642017acf021aa2d132b1e'
-         '903eaeff99c80a9c7421e3f9333366f8'
-         '40a1788fa42fbcdb4213ede953f8a613'
-         '06e649da820bc6d2049df27a67999c03'
-         '6993bdf388ea4b68a95cef322a4d0c7b'
-         '53c409842d3e611fb60b9dbef49a8342'
-         '7bb43fcb0bfe0dc2d17bb8ace17be192'
-         '72d0cb7abea192162be2fc098f460e40'
+         'd21cc001d7ba839e560c1eba431b712f'
+         '5c370df635441ceee13bd4d76faa3124'
+         '5172bbff4623ac1c061c2fcc742d67d6'
+         'c343a2f05e2d354050ab36fcd8830d35'
+         '7ffc8985a7c4e59de48bed389151d2b9'
+         'c067de828db8bd4bd85c111ef6eccc3e'
+         '938994075cc25375f491dd779b8928b9'
+         'a2d1acc2994f8df9b2ce0efa3b3e622c'
+         '9b58510db8ca609c3391dec902f6814e'
          '6b5c2b02c39db21a9fe5c198794059d4'
          'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
          'c92b7364c060d7ae010d7860419634fb')
