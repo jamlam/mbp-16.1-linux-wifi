@@ -2,7 +2,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.12.5
+pkgver=5.12.6
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -11,7 +11,7 @@ url="https://git.archlinux.org/linux.git/log/?h=v$_srctag"
 arch=(x86_64)
 license=(GPL2)
 makedepends=(
-  bc kmod libelf pahole cpio perl tar xz
+  bc kmod libelf pahole cpio perl tar xz 
   xmlto python-sphinx python-sphinx_rtd_theme graphviz imagemagick
   git
 )
@@ -232,7 +232,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-md5sums=('04d22ba1dc23ea068b6669d2f603ae4b'
+md5sums=('fc7a5199fc49eddff6ddbf1577280e1a'
          'SKIP'
          '1e81a7ec51b2824fa0b4adf8371482b1'
          '080dee4dd14a43c2c131aa907b5a6045'
