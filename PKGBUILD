@@ -233,3 +233,27 @@ for _p in "${pkgname[@]}"; do
 done
 
 
+md5sums=('77cb5ae53f13405dac2a5bcb887a274a'
+         'SKIP'
+         '1e81a7ec51b2824fa0b4adf8371482b1'
+         '080dee4dd14a43c2c131aa907b5a6045'
+         'a0b6081a5f114a0bf6241bd131f3b360'
+         '4e95da49152e777a7451f8ff3034070b'
+         '8abebb5f4b905792d07cf6e3dd5cc145'
+         '4545735c36000c0615be989948a79aba'
+         'aa562bcf187c5ce9dd9282737dffcaa9'
+         '5f7b6f9b4cc4ac46b3678c95f3ffe4a3'
+         '240b3d1e13f183e1c9a8a384583a7003'
+         '4112d17440b0c43fb6ef21128b991f8c'
+         '2192d7b8343e0c84368a06a745addac6'
+         '5c370df635441ceee13bd4d76faa3124'
+         '5172bbff4623ac1c061c2fcc742d67d6'
+         'c343a2f05e2d354050ab36fcd8830d35'
+         '7ffc8985a7c4e59de48bed389151d2b9'
+         'c067de828db8bd4bd85c111ef6eccc3e'
+         '938994075cc25375f491dd779b8928b9'
+         'a2d1acc2994f8df9b2ce0efa3b3e622c'
+         '9b58510db8ca609c3391dec902f6814e'
+         '6b5c2b02c39db21a9fe5c198794059d4'
+         'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
+         'c92b7364c060d7ae010d7860419634fb')
