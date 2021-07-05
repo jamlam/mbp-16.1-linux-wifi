@@ -712,10 +712,10 @@ index 79b498f816fe..62211b590a61 100644
  static ssize_t applesmc_calibrate_show(struct device *dev,
  				struct device_attribute *attr, char *sysfsbuf)
  {
--	return snprintf(sysfsbuf, PAGE_SIZE, "(%d,%d)\n", rest_x, rest_y);
+-	return sysfs_emit(sysfsbuf, "(%d,%d)\n", rest_x, rest_y);
 +	struct applesmc_device *smc = dev_get_drvdata(dev);
 +
-+	return snprintf(sysfsbuf, PAGE_SIZE, "(%d,%d)\n", smc->rest_x, smc->rest_y);
++	return sysfs_emit(sysfsbuf, "(%d,%d)\n", smc->rest_x, smc->rest_y);
  }
  
  static ssize_t applesmc_calibrate_store(struct device *dev,
@@ -822,10 +822,10 @@ index 79b498f816fe..62211b590a61 100644
  static ssize_t applesmc_key_at_index_show(struct device *dev,
  				struct device_attribute *attr, char *sysfsbuf)
  {
--	return snprintf(sysfsbuf, PAGE_SIZE, "%d\n", key_at_index);
+-	return sysfs_emit(sysfsbuf, "%d\n", key_at_index);
 +	struct applesmc_device *smc = dev_get_drvdata(dev);
 +
-+	return snprintf(sysfsbuf, PAGE_SIZE, "%d\n", smc->key_at_index);
++	return sysfs_emit(sysfsbuf, PAGE_SIZE, "%d\n", smc->key_at_index);
  }
  
  static ssize_t applesmc_key_at_index_store(struct device *dev,
