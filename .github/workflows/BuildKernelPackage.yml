@@ -37,7 +37,7 @@ jobs:
         echo "::set-output name=tag::${pkgver}-${pkgrel}"
         echo $pkgver $pkgrel
         if curl -s https://github.com/Redecorating/mbp-16.1-linux-wifi/releases/tag/v${pkgver}-${pkgrel} > /dev/null
-        then rm *.pkg.tar.*
+        then sudo rm *.pkg.tar.*
         fi
           
     - name: Release
