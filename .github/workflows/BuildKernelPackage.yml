@@ -20,6 +20,9 @@ jobs:
         EOF
 
         docker run -t -v $PWD:/build archlinux /bin/bash /build/entrypoint.sh
+    
+    - name: Print sha512sums
+      run: sha512sum *.pkg.tar*
 
     - name: Upload Arch package
       uses: actions/upload-artifact@v2
@@ -33,9 +36,16 @@ jobs:
         source PKGBUILD
         echo "::set-output name=tag::${pkgver}-${pkgrel}"
         echo $pkgver $pkgrel
+        if ! curl -s https://github.com/Redecorating/mbp-16.1-linux-wifi/releases/tag/v${pkgver}-${pkgrel} > /dev/null
+        then RELEASE=true
+        else RELEASE=false
+        fi
+        echo Release: $RELEASE
+        echo "::set-output name=RELEASE::${RELEASE}"
           
     - name: Release
       uses: softprops/action-gh-release@v1
+      if: ${{ steps.create_tag.outputs.RELEASE == "true" }}
       with:
          files: |
            ${{ github.workspace }}/*.pkg.tar.*
