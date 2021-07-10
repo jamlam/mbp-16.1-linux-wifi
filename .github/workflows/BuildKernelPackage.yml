@@ -1,0 +1,59 @@
+name: Build Kernel Package
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Build in Docker
+      run: |
+        cat << EOF > entrypoint.sh
+        cd /build
+        useradd builduser -m
+        passwd -d builduser
+        pacman -Syu --noconfirm --needed sudo base-devel
+        printf 'builduser ALL=(ALL) ALL\\n' | tee -a /etc/sudoers
+        chown -R builduser:builduser ./
+        sudo -u builduser gpg --keyserver keyserver.ubuntu.com --recv-keys 38DBBDC86092693E
+        sudo -u builduser bash -c 'export MAKEFLAGS=j\$(nproc) && makepkg -s --noconfirm'
+        EOF
+
+        docker run -t -v $PWD:/build archlinux /bin/bash /build/entrypoint.sh
+    
+    - name: Print sha512sums
+      run: sha512sum *.pkg.tar*
+
+    - name: Upload Arch package
+      uses: actions/upload-artifact@v2
+      with:
+        name: mbp-16.1-linux-wifi-arch
+        path: ${{ github.workspace }}/mbp-16.1-linux-wifi-*-x86_64.pkg.tar.zst
+        
+    - name: create tag
+      id: create_tag
+      run: |
+        source PKGBUILD
+        echo "::set-output name=tag::${pkgver}-${pkgrel}"
+        echo $pkgver $pkgrel
+        if curl -s https://github.com/Redecorating/mbp-16.1-linux-wifi/releases/tag/v${pkgver}-${pkgrel} > /dev/null
+        then sudo rm *.pkg.tar.*
+        fi
+          
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+         files: |
+           ${{ github.workspace }}/*.pkg.tar.*
+         tag_name: v${{ steps.create_tag.outputs.tag }}
+         draft: true
+         body: |
+          Install packages with `sudo pacman -U <file>`, you can use urls or file paths.
+          You will need to be using `apple-bce-dkms-git` as `apple-bce-git` only works on `linux-mbp`.
+          If you are looking for a debian version of this, see [here](https://github.com/Redecorating/mbp-ubuntu-kernel/releases)
+          
+          You will need wifi firmware from MacOS, as described [here](https://wiki.t2linux.org/guides/wifi/#on-macos).
+      env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
