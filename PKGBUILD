@@ -56,6 +56,8 @@ source=(
 
   # Broadcom WIFI/BT device support
   wifi-bigsur.patch
+  
+  https://raw.githubusercontent.com/FelixFrog/void-mba/main/srcpkgs/linux5.12-air/patches/8002-brcmfmac-4377-mod.patch
 )
 
 validpgpkeys=(
@@ -255,4 +257,5 @@ md5sums=('76c60fb304510a7bbd9c838790bc5fe4'
          '9b58510db8ca609c3391dec902f6814e'
          '6b5c2b02c39db21a9fe5c198794059d4'
          'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
-         'c92b7364c060d7ae010d7860419634fb')
+         'c92b7364c060d7ae010d7860419634fb'
+         'aaebba04ae61485024200dcba755da49')
