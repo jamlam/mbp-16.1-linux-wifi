@@ -1,8 +1,9 @@
-# Maintainer: Aun-Ali Zaidi <admin@kodeit.net>
+# Maintainer: James Lambert (jamlam) <jamesl@mbert.onmicrosoft.com>
+# Contributor: Aun-Ali Zaidi <admin@kodeit.net>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.13.3
+pkgver=5.13.7
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -232,7 +233,8 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-md5sums=('510d875f1dafbe3269cd409bba35ec8e'
+
+md5sums=('9bd74571c148a7753f5a237ba52f8ee5'
          'SKIP'
          '1e81a7ec51b2824fa0b4adf8371482b1'
          '080dee4dd14a43c2c131aa907b5a6045'
