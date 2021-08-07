@@ -301,8 +301,7 @@ index 45bc502fcb341..2890b24a34d1d 100644
  
  static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
  	BRCMF_FW_ENTRY(BRCM_CC_43602_CHIP_ID, 0xFFFFFFFF, 43602),
-@@ -78,7 +80,8 @@ static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
- 	BRCMF_FW_ENTRY(BRCM_CC_4366_CHIP_ID, 0xFFFFFFF0, 4366C),
+@@ -79,6 +81,7 @@ static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
  	BRCMF_FW_ENTRY(BRCM_CC_43664_CHIP_ID, 0xFFFFFFF0, 4366C),
  	BRCMF_FW_ENTRY(BRCM_CC_43666_CHIP_ID, 0xFFFFFFF0, 4366C),
  	BRCMF_FW_ENTRY(BRCM_CC_4371_CHIP_ID, 0xFFFFFFFF, 4371),
@@ -773,8 +772,7 @@ diff --git a/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h b/dri
 index c6c4be05159d4..083cc6927417e 100644
 --- a/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
 +++ b/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
-@@ -49,7 +49,8 @@
- #define BRCM_CC_4366_CHIP_ID		0x4366
+@@ -50,6 +50,7 @@
  #define BRCM_CC_43664_CHIP_ID		43664
  #define BRCM_CC_43666_CHIP_ID		43666
  #define BRCM_CC_4371_CHIP_ID		0x4371
