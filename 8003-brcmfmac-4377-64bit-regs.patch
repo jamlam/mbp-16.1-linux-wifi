@@ -1,3 +1,14 @@
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/chip.c
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/chip.c
+@@ -1429,7 +1429,7 @@ bool brcmf_chip_sr_capable(struct brcmf_chip *pub)
+ 		reg = chip->ops->read32(chip->ctx, addr);
+ 		return (reg & (PMU_RCTL_MACPHY_DISABLE_MASK |
+ 			       PMU_RCTL_LOGIC_DISABLE_MASK)) == 0;
+-	case BRCM_CC_4378_CHIP_ID:
++	case BRCM_CC_4377_CHIP_ID:
+		return false;
+ 	}
+ }
 --- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
 +++ b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
 @@ -586,23 +586,23 @@
