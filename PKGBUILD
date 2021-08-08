@@ -254,7 +254,7 @@ md5sums=('9bd74571c148a7753f5a237ba52f8ee5'
          'c067de828db8bd4bd85c111ef6eccc3e'
          '938994075cc25375f491dd779b8928b9'
          'a2d1acc2994f8df9b2ce0efa3b3e622c'
-         '9b58510db8ca609c3391dec902f6814e'
+         'bfc5adf91d389b52e9e0e61bc313b980'
          '6b5c2b02c39db21a9fe5c198794059d4'
          'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
-         'c92b7364c060d7ae010d7860419634fb')
+         '7bc42e89f69e546abae185742609ca76')
