@@ -600,7 +600,7 @@ index 79b498f816fe..62211b590a61 100644
 +	struct applesmc_device *smc = dev_get_drvdata(dev);
 +	const char *key = smc->reg.index[to_index(devattr)];
  
- 	return snprintf(sysfsbuf, PAGE_SIZE, "%s\n", key);
+ 	return sysfs_emit(sysfsbuf, "%s\n", key);
  }
 @@ -821,12 +885,13 @@ static ssize_t applesmc_show_sensor_label(struct device *dev,
  static ssize_t applesmc_show_temperature(struct device *dev,
