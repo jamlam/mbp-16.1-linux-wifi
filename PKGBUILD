@@ -59,6 +59,7 @@ source=(
   8001-corellium-wifi-bigsur.patch
   8002-brcmfmac-4377-mod.patch
   8003-brcmfmac-4377-64bit-regs.patch
+  8004-brcmfmac-4377-chip-ids.patch
 )
 
 validpgpkeys=(
@@ -260,5 +261,6 @@ md5sums=('9bd74571c148a7753f5a237ba52f8ee5'
          '6b5c2b02c39db21a9fe5c198794059d4'
          'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
          '7bc42e89f69e546abae185742609ca76'
-         'aaebba04ae61485024200dcba755da49'
-         'ad2552bc11f7fd9d57ccda27272fee44')
+         'af869021bdedfa4b4446f1a39fc02a70'
+         'ad2552bc11f7fd9d57ccda27272fee44'
+         '369dbf0800252c3f3ce2fbc26cf7fc53')

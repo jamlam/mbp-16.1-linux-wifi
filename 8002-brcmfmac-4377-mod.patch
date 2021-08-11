@@ -42,7 +42,7 @@ index 60e3b0ce4fd7..a262e2eb36af 100644
  
  static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
  	BRCMF_FW_ENTRY(BRCM_CC_43602_CHIP_ID, 0xFFFFFFFF, 43602),
-@@ -80,6 +81,7 @@ static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
+@@ -82,6 +82,7 @@ static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
  	BRCMF_FW_ENTRY(BRCM_CC_4366_CHIP_ID, 0xFFFFFFF0, 4366C),
  	BRCMF_FW_ENTRY(BRCM_CC_43664_CHIP_ID, 0xFFFFFFF0, 4366C),
  	BRCMF_FW_ENTRY(BRCM_CC_4371_CHIP_ID, 0xFFFFFFFF, 4371),
