@@ -56,7 +56,9 @@ source=(
   7001-drm-i915-fbdev-Discard-BIOS-framebuffers-exceeding-h.patch
 
   # Broadcom WIFI/BT device support
-  wifi-bigsur.patch
+  8001-corellium-wifi-bigsur.patch
+  8002-brcmfmac-4377-mod.patch
+  8003-brcmfmac-4377-64bit-regs.patch
 )
 
 validpgpkeys=(
@@ -257,4 +259,6 @@ md5sums=('9bd74571c148a7753f5a237ba52f8ee5'
          'bfc5adf91d389b52e9e0e61bc313b980'
          '6b5c2b02c39db21a9fe5c198794059d4'
          'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
-         '7bc42e89f69e546abae185742609ca76')
+         '7bc42e89f69e546abae185742609ca76'
+         'aaebba04ae61485024200dcba755da49'
+         'ad2552bc11f7fd9d57ccda27272fee44')
