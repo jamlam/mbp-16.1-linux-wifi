@@ -65,8 +65,8 @@ index 777ffdbce230..7b50e2edf6e2 100644
 --- a/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
 +++ b/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
 @@ -50,6 +50,7 @@
- #define BRCM_CC_4366_CHIP_ID		0x4366
  #define BRCM_CC_43664_CHIP_ID		43664
+ #define BRCM_CC_43666_CHIP_ID		43666
  #define BRCM_CC_4371_CHIP_ID		0x4371
 +#define BRCM_CC_4377_CHIP_ID		0x4377
  #define BRCM_CC_4378_CHIP_ID		0x4378
