@@ -56,6 +56,7 @@ source=(
 
   # Broadcom WIFI/BT device support
   wifi-bigsur.patch
+  bluetooth-rollback.patch
 )
 
 validpgpkeys=(
@@ -232,6 +233,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
+
 md5sums=('76c60fb304510a7bbd9c838790bc5fe4'
          'SKIP'
          '1e81a7ec51b2824fa0b4adf8371482b1'
@@ -255,4 +257,5 @@ md5sums=('76c60fb304510a7bbd9c838790bc5fe4'
          '9b58510db8ca609c3391dec902f6814e'
          '6b5c2b02c39db21a9fe5c198794059d4'
          'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
-         'c92b7364c060d7ae010d7860419634fb')
+         'c92b7364c060d7ae010d7860419634fb'
+         '25764384400e1c7eaa0ecc57e6973727')
