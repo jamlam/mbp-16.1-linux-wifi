@@ -1,0 +1,47 @@
+From 8cd0a13487afd37a021d8f685d0724990773d9e5 Mon Sep 17 00:00:00 2001
+From: Houjun Liu <hliu@shabang.cf>
+Date: Wed, 11 Aug 2021 11:28:01 -0700
+Subject: [PATCH] added @aunali1 patches that didn't apply correctly
+
+Co-authored-by: Aun-Ali Zaidi <admin@kodeit.net>
+Co-authored-by: emergenz <franz.srambical@gmail.com>
+---
+ drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c       | 2 ++
+ drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h | 1 +
+ 2 files changed, 3 insertions(+)
+
+diff --git a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
+index d64f9e902..99a86a56e 100644
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
+@@ -82,6 +82,7 @@ static const struct brcmf_firmware_mapping brcmf_pcie_fwnames[] = {
+ 	BRCMF_FW_ENTRY(BRCM_CC_43664_CHIP_ID, 0xFFFFFFF0, 4366C),
+ 	BRCMF_FW_ENTRY(BRCM_CC_43666_CHIP_ID, 0xFFFFFFF0, 4366C),
+ 	BRCMF_FW_ENTRY(BRCM_CC_4371_CHIP_ID, 0xFFFFFFFF, 4371),
++    BRCMF_FW_ENTRY(BRCM_CC_4377_CHIP_ID, 0xFFFFFFFF, 4377),
+ 	BRCMF_FW_ENTRY(BRCM_CC_4378_CHIP_ID, 0xFFFFFFFF, 4378),
+ };
+ 
+@@ -2364,6 +2365,7 @@ static const struct pci_device_id brcmf_pcie_devid_table[] = {
+ 	BRCMF_PCIE_DEVICE(BRCM_PCIE_4366_2G_DEVICE_ID),
+ 	BRCMF_PCIE_DEVICE(BRCM_PCIE_4366_5G_DEVICE_ID),
+ 	BRCMF_PCIE_DEVICE(BRCM_PCIE_4371_DEVICE_ID),
++    BRCMF_PCIE_DEVICE(BRCM_PCIE_4377_DEVICE_ID),
+ 	BRCMF_PCIE_DEVICE(BRCM_PCIE_4378_DEVICE_ID),
+ 	{ /* end: all zeroes */ }
+ };
+diff --git a/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h b/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
+index 5a13c98b5..eb3f361a2 100644
+--- a/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
++++ b/drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h
+@@ -86,6 +86,7 @@
+ #define BRCM_PCIE_4366_2G_DEVICE_ID	0x43c4
+ #define BRCM_PCIE_4366_5G_DEVICE_ID	0x43c5
+ #define BRCM_PCIE_4371_DEVICE_ID	0x440d
++#define BRCM_PCIE_4377_DEVICE_ID	0x4488
+ #define BRCM_PCIE_4378_DEVICE_ID	0x4425
+ 
+ 
+-- 
+2.32.0
+
