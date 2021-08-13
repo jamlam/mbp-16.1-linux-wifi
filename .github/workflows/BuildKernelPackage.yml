@@ -39,19 +39,19 @@ jobs:
         if curl -s https://github.com/Redecorating/mbp-16.1-linux-wifi/releases/tag/v${pkgver}-${pkgrel} > /dev/null
         then sudo rm *.pkg.tar.*
         fi
-   # - name: Release
-   #   uses: softprops/action-gh-release@v1
-   #   with:
-   #      files: |
-   #        ${{ github.workspace }}/*.pkg.tar.*
-   #      tag_name: v${{ steps.create_tag.outputs.tag }}
-   #      draft: true
-   #      body: |
-   #       Install packages with `sudo pacman -U <file>`, you can use urls or file paths.
-   #       You will need to be using `apple-bce-dkms-git` as `apple-bce-git` only works on `linux-mbp`.
-   #       If you are looking for a debian version of this, see [here](https://github.com/Redecorating/mbp-ubuntu-kernel/releases)
-   ##       You will need wifi firmware from MacOS, as described [here](https://wiki.t2linux.org/guides/wifi/#on-macos).
-    #  env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Release
+      uses: softprops/action-gh-release@v0.1.12
+      with:
+         files: |
+           ${{ github.workspace }}/*.pkg.tar.*
+         tag_name: v${{ steps.create_tag.outputs.tag }}
+         draft: true
+         body: |
+          Install packages with `sudo pacman -U <file>`, you can use urls or file paths.
+          You will need to be using `apple-bce-dkms-git` as `apple-bce-git` only works on `linux-mbp`.
+          If you are looking for a debian version of this, see [here](https://github.com/Redecorating/mbp-ubuntu-kernel/releases)
+          You will need wifi firmware from MacOS, as described [here](https://wiki.t2linux.org/guides/wifi/#on-macos).
+      env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
