@@ -3,7 +3,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.13.10
+pkgver=5.13.12
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -236,30 +236,3 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-md5sums=('951672e89ffa0a2f32ea34732ee85f3f'
-         'SKIP'
-         '1e81a7ec51b2824fa0b4adf8371482b1'
-         '080dee4dd14a43c2c131aa907b5a6045'
-         'a0b6081a5f114a0bf6241bd131f3b360'
-         '4e95da49152e777a7451f8ff3034070b'
-         '7d09991a37cffaf38f0241b43668333f'
-         '4545735c36000c0615be989948a79aba'
-         'aa562bcf187c5ce9dd9282737dffcaa9'
-         '5f7b6f9b4cc4ac46b3678c95f3ffe4a3'
-         '240b3d1e13f183e1c9a8a384583a7003'
-         'e136b6b2f79689cd3dda4292f5d697c9'
-         '2192d7b8343e0c84368a06a745addac6'
-         '5c370df635441ceee13bd4d76faa3124'
-         '5172bbff4623ac1c061c2fcc742d67d6'
-         'c343a2f05e2d354050ab36fcd8830d35'
-         '7ffc8985a7c4e59de48bed389151d2b9'
-         'c067de828db8bd4bd85c111ef6eccc3e'
-         '938994075cc25375f491dd779b8928b9'
-         'a2d1acc2994f8df9b2ce0efa3b3e622c'
-         'bfc5adf91d389b52e9e0e61bc313b980'
-         '6b5c2b02c39db21a9fe5c198794059d4'
-         'b1d2a8aca562ad2bd6ff0bcb48fcbc70'
-         '7bc42e89f69e546abae185742609ca76'
-         '7fa951078b1710bda14dbc778e57003f'
-         'ad2552bc11f7fd9d57ccda27272fee44'
-         '41911438d2c769d064f6b58cc1c7f83f')
