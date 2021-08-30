@@ -25,7 +25,7 @@ index 6c39415a69d6..d2392a8fdbbb 100644
 +	case BRCM_CC_4377_CHIP_ID:
 +		return 0x170000;
 	case BRCM_CC_4378_CHIP_ID:
-                return 0x352000;
+ 		return 0x352000;
  	default:
  		brcmf_err("unknown chip: %s\n", ci->pub.name);
  		break;
