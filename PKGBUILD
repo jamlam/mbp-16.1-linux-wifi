@@ -236,7 +236,6 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-
 md5sums=('392cd7526637b3cbdf9de748d9a9008e'
          'SKIP'
          '51da5decbd818529bab615a9a52d800e'
