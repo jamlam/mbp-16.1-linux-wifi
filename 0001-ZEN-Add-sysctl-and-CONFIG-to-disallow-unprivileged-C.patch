@@ -67,8 +67,8 @@ index c675fdbd3dce..9266039e28e4 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -97,6 +97,10 @@
- #include <linux/scs.h>
  #include <linux/io_uring.h>
+ #include <linux/bpf.h>
  
 +#ifdef CONFIG_USER_NS
 +#include <linux/user_namespace.h>
