@@ -25,10 +25,8 @@ index 6c39415a69d6..d2392a8fdbbb 100644
 +	case BRCM_CC_4377_CHIP_ID:
 +		return 0x170000;
 	case BRCM_CC_4378_CHIP_ID:
-                return 0x352000;
+ 		return 0x352000;
  	default:
- 		brcmf_err("unknown chip: %s\n", ci->pub.name);
- 		break;
 diff --git a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
 index 60e3b0ce4fd7..a262e2eb36af 100644
 --- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/pcie.c
