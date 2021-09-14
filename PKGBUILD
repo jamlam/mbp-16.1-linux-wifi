@@ -236,10 +236,9 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-
 md5sums=('b45b18effd1af9077de47f4bc496d2ab'
          'SKIP'
-         '51da5decbd818529bab615a9a52d800e'
+         '68cadf07baf6577c14377f3370519214'
          '31b889cb5a46adee6a9f9324d3177e33'
          'a0b6081a5f114a0bf6241bd131f3b360'
          '4e95da49152e777a7451f8ff3034070b'
