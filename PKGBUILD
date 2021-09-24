@@ -26,6 +26,10 @@ source=(
   # Arch Linux patches
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
   0002-HID-quirks-Add-Apple-Magic-Trackpad-2-to-hid_have_sp.patch
+  
+  #NVMe fix
+  1001-revert-nvme.patch
+  1002-reapply-tcp-patch.patch
 
   # Hack for AMD DC eDP link rate bug
   2001-drm-amd-display-Force-link_rate-as-LINK_RATE_RBR2-fo.patch
@@ -241,6 +245,8 @@ sha256sums=('54848c1268771ee3515e4c33e29abc3f1fa90d8144894cce6d0ebc3b158bccec'
             '1ddd4443470ad66aff8075e0528ad7757de41d474152db1362e23be72e243919'
             '6b4da532421cac5600d09c0c52742aa52d848af098f7853abe60c02e9d0a3752'
             '2184069ab00ef43d9674756e9b7a56d15188bc4494d34425f04ddc779c52acd8'
+            '78ea4702928d87bfdd41c6998154d7c2e1396c823a012d3891f1b803198712aa'
+            'ec658c85b9cfaa32acda11ec768e608bafe5b53a7511523b55c8c082d8dce04a'
             '786dfc22e4c6ece883e7dedd0ba3f6c14018584df95450b2cb78f3da8b01f7cb'
             '7366a08383900a09f8e742b1e4f0a02e0839a385e68e70a89d1815c197df3300'
             '8d8401a99a9dfbc41aa2dc5b6a409a19860b1b918465e19de4a4ff18de075ea3'
