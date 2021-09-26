@@ -5,7 +5,7 @@
 pkgbase=mbp-16.1-linux-wifi
 pkgver=5.14.6
 _srcname=linux-${pkgver}
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux for MBP 16.1 Wifi'
 _srctag=v${pkgver%.*}-${pkgver##*.}
 url="https://git.archlinux.org/linux.git/log/?h=v$_srctag"
@@ -64,6 +64,8 @@ source=(
   8002-brcmfmac-4377-mod.patch
   8003-brcmfmac-4377-64bit-regs.patch
   8004-brcmfmac-4377-chip-ids.patch
+  
+  9001-bluetooth-disable-read-LE-MinMax-Tx-Power.patch
 )
 
 validpgpkeys=(
@@ -268,4 +270,5 @@ sha256sums=('54848c1268771ee3515e4c33e29abc3f1fa90d8144894cce6d0ebc3b158bccec'
             '903c9e2d141ddb4ebc7f60fd08b54d97306a187a06bfc8832bc8f442f00027e3'
             'e82c6bc63ef94745a576b7433f691c17ab2065b99b1b944e25ee005b0b662dec'
             'a57c31b207fcb62fc2b764b3e69058cf6f0291a34724105252d65e7fa06b1905'
-            'c8442b069604d2f6ad566e64eb6ebbafbd44e04799ff625419b3552154d713c1')
+            'c8442b069604d2f6ad566e64eb6ebbafbd44e04799ff625419b3552154d713c1'
+            'f1b8accfe1a38aeaf00867577e488a9b958efd22dbe6e95bc7ce5d369cbf6b19')
