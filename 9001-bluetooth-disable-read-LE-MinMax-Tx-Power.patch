@@ -7,6 +7,6 @@
 -		if (hdev->commands[38] & 0x80) {
 +		if (false) {
  			/* Read LE Min/Max Tx Power*/
- 			hci_req_add(req, HCI_OP_LE_READ_TRANSMIT_POWER,
- 			    0, NULL);
+ 			hci_req_add(req, HCI_OP_LE_READ_ACCEPT_LIST_SIZE,
+ 				    0, NULL);
 --
