@@ -1,12 +1,13 @@
+diff --git a/net/bluetooth/hci_core.c b/net/bluetooth/hci_core.c
+index 4c25bcd1a..6dec13a89 100644
 --- a/net/bluetooth/hci_core.c
 +++ b/net/bluetooth/hci_core.c
 @@ -742,7 +742,7 @@ static int hci_init3_req(struct hci_request *req, unsigned long opt)
  			hci_req_add(req, HCI_OP_LE_READ_ADV_TX_POWER, 0, NULL);
  		}
-
+ 
 -		if (hdev->commands[38] & 0x80) {
 +		if (false) {
  			/* Read LE Min/Max Tx Power*/
- 			hci_req_add(req, HCI_OP_LE_READ_ACCEPT_LIST_SIZE,
+ 			hci_req_add(req, HCI_OP_LE_READ_TRANSMIT_POWER,
  				    0, NULL);
---
