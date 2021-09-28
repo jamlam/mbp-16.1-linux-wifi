@@ -1,4 +1,4 @@
-mbp-16.1-linux-wifi - 5.14.6
+mbp-16.1-linux-wifi - 5.14.8
 ==============
 
 Arch Linux package for Linux kernel with bleeding edge 2018+ MacBook Pro support.
@@ -7,7 +7,7 @@ This is a very unsupported quick fix to get Wifi working on some MBP devices usi
 
 In order to get the patch to apply cleanly I've needed to remove some of the patches to support other BRCM devices in the various Macbooks. I've tested this on an MBP16.1, it should work on other models with the BRCM4364 but I've not tested it myself. For more info on a longer term solution for these cards have a look here http://t2linux.org/
 
-This build now includes patches to enable BRCM4377 support. 
+This build now includes patches to enable BRCM4377 support as well as a temp fix for the Bluetooth issues seen since 5.10.  
 
 You should be able to use this directly on Arch or Manjaro as below. 
 
