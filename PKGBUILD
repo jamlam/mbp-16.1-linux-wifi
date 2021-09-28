@@ -241,6 +241,7 @@ for _p in "${pkgname[@]}"; do
     _package${_p#$pkgbase}
   }"
 done
+
 sha256sums=('ca0eda14c512efa7fc054e9eb89dd8f6a6e7075aef1e39d30b5f243f7bde9b89'
             'SKIP'
             '1ddd4443470ad66aff8075e0528ad7757de41d474152db1362e23be72e243919'
