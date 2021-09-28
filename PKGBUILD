@@ -5,7 +5,7 @@
 pkgbase=mbp-16.1-linux-wifi
 pkgver=5.14.8
 _srcname=linux-${pkgver}
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux for MBP 16.1 Wifi'
 _srctag=v${pkgver%.*}-${pkgver##*.}
 url="https://git.archlinux.org/linux.git/log/?h=v$_srctag"
@@ -26,6 +26,10 @@ source=(
   # Arch Linux patches
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
   0002-HID-quirks-Add-Apple-Magic-Trackpad-2-to-hid_have_sp.patch
+  
+  #NVMe fix
+  1001-revert-nvme.patch
+  1002-reapply-tcp-patch.patch
 
   # Hack for AMD DC eDP link rate bug
   2001-drm-amd-display-Force-link_rate-as-LINK_RATE_RBR2-fo.patch
@@ -60,6 +64,8 @@ source=(
   8002-brcmfmac-4377-mod.patch
   8003-brcmfmac-4377-64bit-regs.patch
   8004-brcmfmac-4377-chip-ids.patch
+  
+  9001-bluetooth-disable-read-LE-MinMax-Tx-Power.patch
 )
 
 validpgpkeys=(
@@ -240,6 +246,8 @@ sha256sums=('ca0eda14c512efa7fc054e9eb89dd8f6a6e7075aef1e39d30b5f243f7bde9b89'
             '1ddd4443470ad66aff8075e0528ad7757de41d474152db1362e23be72e243919'
             '6b4da532421cac5600d09c0c52742aa52d848af098f7853abe60c02e9d0a3752'
             '2184069ab00ef43d9674756e9b7a56d15188bc4494d34425f04ddc779c52acd8'
+            '78ea4702928d87bfdd41c6998154d7c2e1396c823a012d3891f1b803198712aa'
+            'ec658c85b9cfaa32acda11ec768e608bafe5b53a7511523b55c8c082d8dce04a'
             '786dfc22e4c6ece883e7dedd0ba3f6c14018584df95450b2cb78f3da8b01f7cb'
             '7366a08383900a09f8e742b1e4f0a02e0839a385e68e70a89d1815c197df3300'
             '8d8401a99a9dfbc41aa2dc5b6a409a19860b1b918465e19de4a4ff18de075ea3'
@@ -261,4 +269,5 @@ sha256sums=('ca0eda14c512efa7fc054e9eb89dd8f6a6e7075aef1e39d30b5f243f7bde9b89'
             '903c9e2d141ddb4ebc7f60fd08b54d97306a187a06bfc8832bc8f442f00027e3'
             'e82c6bc63ef94745a576b7433f691c17ab2065b99b1b944e25ee005b0b662dec'
             'a57c31b207fcb62fc2b764b3e69058cf6f0291a34724105252d65e7fa06b1905'
-            'c8442b069604d2f6ad566e64eb6ebbafbd44e04799ff625419b3552154d713c1')
+            'c8442b069604d2f6ad566e64eb6ebbafbd44e04799ff625419b3552154d713c1'
+            'f1b8accfe1a38aeaf00867577e488a9b958efd22dbe6e95bc7ce5d369cbf6b19')
