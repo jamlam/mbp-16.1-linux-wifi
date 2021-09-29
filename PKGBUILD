@@ -61,9 +61,7 @@ source=(
 
   # Broadcom WIFI/BT device support
   8001-corellium-wifi-bigsur.patch
-  8002-brcmfmac-4377-mod.patch
-  8003-brcmfmac-4377-64bit-regs.patch
-  8004-brcmfmac-4377-chip-ids.patch
+  8002-Add-support-for-BCM4377.patch
   
   9001-bluetooth-disable-read-LE-MinMax-Tx-Power.patch
 )
@@ -268,7 +266,5 @@ sha256sums=('ca0eda14c512efa7fc054e9eb89dd8f6a6e7075aef1e39d30b5f243f7bde9b89'
             '9640178d6251686c980c30fc528b3d70beac6ce8246bf433506a3f843808326c'
             '90a6012cdd8a64ede8e0bbaf7331960bd68f628e0973b65459188eb1ccb5b829'
             '903c9e2d141ddb4ebc7f60fd08b54d97306a187a06bfc8832bc8f442f00027e3'
-            'e82c6bc63ef94745a576b7433f691c17ab2065b99b1b944e25ee005b0b662dec'
-            'a57c31b207fcb62fc2b764b3e69058cf6f0291a34724105252d65e7fa06b1905'
-            'c8442b069604d2f6ad566e64eb6ebbafbd44e04799ff625419b3552154d713c1'
+            'fbbbb17f657d72a36677b556b2b61594a3389191d05de4e4a3a446daab260667'
             'f1b8accfe1a38aeaf00867577e488a9b958efd22dbe6e95bc7ce5d369cbf6b19')
