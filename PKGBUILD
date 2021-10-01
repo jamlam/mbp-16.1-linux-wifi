@@ -62,7 +62,8 @@ source=(
   8001-corellium-wifi-bigsur.patch
   8002-Add-support-for-BCM4377.patch
   
-  9001-bluetooth-disable-read-LE-MinMax-Tx-Power.patch
+  9001-bluetooth-add-disable-read-tx-power-quirk.patch
+  9002-add-bluetooth-support-for-16,2.patch
 )
 
 validpgpkeys=(
@@ -265,4 +266,5 @@ sha256sums=('ca0eda14c512efa7fc054e9eb89dd8f6a6e7075aef1e39d30b5f243f7bde9b89'
             '90a6012cdd8a64ede8e0bbaf7331960bd68f628e0973b65459188eb1ccb5b829'
             '903c9e2d141ddb4ebc7f60fd08b54d97306a187a06bfc8832bc8f442f00027e3'
             'fbbbb17f657d72a36677b556b2b61594a3389191d05de4e4a3a446daab260667'
-            'f1b8accfe1a38aeaf00867577e488a9b958efd22dbe6e95bc7ce5d369cbf6b19')
+            '31e414978a947bdb71f27ed364c4da73b81fcf1921250cb69ee1bcf2bbd25636'
+            'ee4ea917e501104b42ce3b7ca524598c8de849890acbbacebaacbb7d8f877ff9')
