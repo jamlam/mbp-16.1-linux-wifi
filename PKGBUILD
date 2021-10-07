@@ -3,7 +3,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.14.8
+pkgver=5.14.10
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -26,9 +26,6 @@ source=(
   # Arch Linux patches
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
   0002-HID-quirks-Add-Apple-Magic-Trackpad-2-to-hid_have_sp.patch
-  
-  #NVMe fix
-  1001-nvme.patch
 
   # Hack for AMD DC eDP link rate bug
   2001-drm-amd-display-Force-link_rate-as-LINK_RATE_RBR2-fo.patch
@@ -241,12 +238,11 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('ca0eda14c512efa7fc054e9eb89dd8f6a6e7075aef1e39d30b5f243f7bde9b89'
+sha256sums=('45ce25e0abd1b46b273c804a00cd3513cd2a5bbcd89180e2e2a5dc8d062085d8'
             'SKIP'
             '1ddd4443470ad66aff8075e0528ad7757de41d474152db1362e23be72e243919'
             '6b4da532421cac5600d09c0c52742aa52d848af098f7853abe60c02e9d0a3752'
             '2184069ab00ef43d9674756e9b7a56d15188bc4494d34425f04ddc779c52acd8'
-            '50bab6fa754e857c462fb1cf88a74b88bd85b5a34fdebbc54e4ded7a9a04e004'
             '786dfc22e4c6ece883e7dedd0ba3f6c14018584df95450b2cb78f3da8b01f7cb'
             '7366a08383900a09f8e742b1e4f0a02e0839a385e68e70a89d1815c197df3300'
             '8d8401a99a9dfbc41aa2dc5b6a409a19860b1b918465e19de4a4ff18de075ea3'
