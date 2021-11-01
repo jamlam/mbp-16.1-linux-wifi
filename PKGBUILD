@@ -62,6 +62,7 @@ source=(
   
   9001-bluetooth-add-disable-read-tx-power-quirk.patch
   9002-add-bluetooth-support-for-16,2.patch
+  intel-lpss.patch
 )
 
 validpgpkeys=(
@@ -265,4 +266,5 @@ sha256sums=('57b2cf6991910e3b67a1b3490022e8a0674b6965c74c12da1e99d138d1991ee8'
             '8f5f6321d90a2c4e753d993e5ec5c8ad78ddb4415f5306117b40f40dd9e42af2'
             'e9e564bdd8f45c552c0f1b32ffa142c887f449f9aadcd190f8d7d143c7567259'
             '31e414978a947bdb71f27ed364c4da73b81fcf1921250cb69ee1bcf2bbd25636'
-            '57731fa10509eb689649e6d1ea33b2c3e20a8116617bd848b565d42379b2b6b6')
+            '57731fa10509eb689649e6d1ea33b2c3e20a8116617bd848b565d42379b2b6b6'
+            '0f7b241ac9cf933cec7eecfa724d29926b2622ba2063a97ebf39256508f34184')
