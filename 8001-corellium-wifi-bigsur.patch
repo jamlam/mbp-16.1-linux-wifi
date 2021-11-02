@@ -40,9 +40,9 @@ index 5bf11e46fc49a..4058edddbdc23 100644
 --- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/chip.c
 +++ b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/chip.c
 @@ -726,6 +726,8 @@ static u32 brcmf_chip_tcm_rambase(struct brcmf_chip_priv *ci)
- 	case BRCM_CC_4364_CHIP_ID:
- 	case CY_CC_4373_CHIP_ID:
  		return 0x160000;
+ 	case CY_CC_43752_CHIP_ID:
+ 		return 0x170000;
 +	case BRCM_CC_4378_CHIP_ID:
 +		return 0x352000;
  	default:
@@ -779,7 +779,7 @@ index c6c4be05159d4..083cc6927417e 100644
 +#define BRCM_CC_4378_CHIP_ID		0x4378
  #define CY_CC_4373_CHIP_ID		0x4373
  #define CY_CC_43012_CHIP_ID		43012
- 
+ #define CY_CC_43752_CHIP_ID		43752
 @@ -83,6 +84,7 @@
  #define BRCM_PCIE_4366_2G_DEVICE_ID	0x43c4
  #define BRCM_PCIE_4366_5G_DEVICE_ID	0x43c5

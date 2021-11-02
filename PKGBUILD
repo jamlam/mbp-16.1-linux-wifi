@@ -3,7 +3,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.14.13
+pkgver=5.15
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -62,6 +62,7 @@ source=(
   
   9001-bluetooth-add-disable-read-tx-power-quirk.patch
   9002-add-bluetooth-support-for-16,2.patch
+  intel-lpss.patch
 )
 
 validpgpkeys=(
@@ -238,7 +239,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('832b78b4c098a99f5c0c50160e3fa58a81412419734c5e8e1b04342fcb4b964d'
+sha256sums=('57b2cf6991910e3b67a1b3490022e8a0674b6965c74c12da1e99d138d1991ee8'
             'SKIP'
             '1ddd4443470ad66aff8075e0528ad7757de41d474152db1362e23be72e243919'
             '6b4da532421cac5600d09c0c52742aa52d848af098f7853abe60c02e9d0a3752'
@@ -261,8 +262,9 @@ sha256sums=('832b78b4c098a99f5c0c50160e3fa58a81412419734c5e8e1b04342fcb4b964d'
             '9dfa9f02d17c5cd9620fa2c1d43ca967b81b6a56d33c2bafae14e0c64e498baa'
             '9640178d6251686c980c30fc528b3d70beac6ce8246bf433506a3f843808326c'
             '90a6012cdd8a64ede8e0bbaf7331960bd68f628e0973b65459188eb1ccb5b829'
-            '903c9e2d141ddb4ebc7f60fd08b54d97306a187a06bfc8832bc8f442f00027e3'
-            'fbbbb17f657d72a36677b556b2b61594a3389191d05de4e4a3a446daab260667'
+            '66e91a3c4616a6c1dfaade969c78f8b3799006d208ac5b5ef314589ba684afce'
+            '8f5f6321d90a2c4e753d993e5ec5c8ad78ddb4415f5306117b40f40dd9e42af2'
             'e9e564bdd8f45c552c0f1b32ffa142c887f449f9aadcd190f8d7d143c7567259'
             '31e414978a947bdb71f27ed364c4da73b81fcf1921250cb69ee1bcf2bbd25636'
-            '57731fa10509eb689649e6d1ea33b2c3e20a8116617bd848b565d42379b2b6b6')
+            '57731fa10509eb689649e6d1ea33b2c3e20a8116617bd848b565d42379b2b6b6'
+            '0f7b241ac9cf933cec7eecfa724d29926b2622ba2063a97ebf39256508f34184')
