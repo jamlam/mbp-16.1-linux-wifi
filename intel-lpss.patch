@@ -38,7 +38,7 @@ index 3f1d976eb67c..be81507afb5e 100644
  	pm_runtime_enable(&pdev->dev);
  
 -	return intel_lpss_probe(&pdev->dev, info);
-+	return ret;
++	return 0;
  }
  
  static int intel_lpss_acpi_remove(struct platform_device *pdev)
