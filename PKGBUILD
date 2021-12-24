@@ -5,7 +5,7 @@
 pkgbase=mbp-16.1-linux-wifi
 pkgver=5.15.7
 _srcname=linux-${pkgver}
-pkgrel=3
+pkgrel=4
 pkgdesc='Linux for MBP 16.1 Wifi'
 _srctag=v${pkgver%.*}-${pkgver##*.}
 url="https://git.archlinux.org/linux.git/log/?h=v$_srctag"
@@ -305,7 +305,7 @@ sha256sums=('5d9050a839edc7480c5c8f7a284cd28bee6db07bec9e41c684f399192bbe5db1'
             'c25d935ed2e21308389aac775d029c32eecc6a8fdef1dc3df4c745c0d46981ea'
             '96b954987bcbe7ea0ba24943c00570570adfb74e2ba7e1f0df3c4074d0f4d112'
             '5c89f30332ce30e010c1e6dcfcef41bb7ce3411acc147b6b00925c24cc0f9086'
-            '08d4b7b71264b1d62c58eb5535c76b44d087654e0895b0c543972c2c264e9cc7'
+            'd314b41614c6e730cd43467eedd22c15197b437e82088242fa9dc453316f2398'
             '54fa470bc8b1b3a449e19860a11cd9ee5dfdf297a05f90dc0029a4e30ee0de43'
             'e5e2cdd0140e93e1f599f37ba0380ce1f51646b35cfccdb7a5a0e02a7eb7afdb'
             '4b1d72c3d402e9135810dde26bcfd41cee3c988c4f5644eedf8d5254376dc329'
