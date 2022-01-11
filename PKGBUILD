@@ -3,7 +3,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=mbp-16.1-linux-wifi
-pkgver=5.15.11
+pkgver=5.16
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -88,7 +88,7 @@ source=(
 
   
   9001-bluetooth-add-disable-read-tx-power-quirk.patch
-  9002-add-bluetooth-support-for-16,2.patch
+  9002-mfd-intel-lpss-pci-fix-clock-speed-for-38a8-UART.patch
   intel-lpss.patch
 )
 
@@ -266,19 +266,19 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('c1178b7e7e12d91292e670191268e3fe9a3563faf899eef43e468577e973a1ce'
+sha256sums=('027d7e8988bb69ac12ee92406c3be1fe13f990b1ca2249e226225cd1573308bb'
             'SKIP'
-            '324a9d46c2338806a0c3ce0880c8d5e85c2ef30d342af3dc96f87b54fae7a586'
+            '7cbba374356a189faac71001c5344ce8f02434684b1ce1accefc0cc4bd6718e5'
             '6b4da532421cac5600d09c0c52742aa52d848af098f7853abe60c02e9d0a3752'
             '2184069ab00ef43d9674756e9b7a56d15188bc4494d34425f04ddc779c52acd8'
             '786dfc22e4c6ece883e7dedd0ba3f6c14018584df95450b2cb78f3da8b01f7cb'
-            '7366a08383900a09f8e742b1e4f0a02e0839a385e68e70a89d1815c197df3300'
+            'cfd23a06797ac86575044428a393dd7f10f06eff7648d0b78aedad82cbe41279'
             '8d8401a99a9dfbc41aa2dc5b6a409a19860b1b918465e19de4a4ff18de075ea3'
             '08d165106fe35b68a7b48f216566951a5db0baac19098c015bcc81c5fcba678d'
-            '459906cab172df9f6712a4168e7a5d529f85b2bb58a068f2d44746df14a6d27a'
+            '62f6d63815d4843ca893ca76b84a9d32590a50358ca0962017ccd75a40884ba8'
             '2827dab6eeb2d2a08034938024f902846b5813e967a0ea253dc1ea88315da383'
             '398dec7d54c6122ae2263cd5a6d52353800a1a60fd85e52427c372ea9974a625'
-            '11565cff9c6a7db8846dc7d5930419045e9527863b8df5979a7465006211bd16'
+            '1366719f62b2d698693b31916569f1178f3d1b0a66e747b7f40f1389edceff07'
             '83f4be6849ba4d5f9fad647ad2eb78bf6409ee98a40ac62e8a5b80496233d70a'
             '44bd3643b2b22fedc59d79511199f30ce6759fa0acdd9a66262a53c5e046da6b'
             'eb04a492197783643b3e72b1d0cf0e856290381997bd165a14fbc63ac1489c25'
@@ -319,5 +319,5 @@ sha256sums=('c1178b7e7e12d91292e670191268e3fe9a3563faf899eef43e468577e973a1ce'
             '713ce3cbda4c53f319bcfeab7e63e8ecf7938109de024f2d99b443fe664ecbd8'
             'd0dd1ae3b08d9eb39bc094d86022c68f74bf903aac1d202e16853e1f0a5ade93'
             '31e414978a947bdb71f27ed364c4da73b81fcf1921250cb69ee1bcf2bbd25636'
-            '5d36770f436b69e69633d060deb55a37b8b3871983068e95fb33d5a195f00574'
+            'f2cff107e536fb7331994be0920632b60b3da42e3404a20919dcffcaeec79bdb'
             '22b2695afcc4103743e55ceeda4691a59ddce84a8f16d1d572159dd2ff7f8537')
