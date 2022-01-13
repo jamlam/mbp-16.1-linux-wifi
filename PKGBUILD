@@ -2,7 +2,7 @@
 # Contributor: Aun-Ali Zaidi <admin@kodeit.net>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
-pkgbase=mbp-16.1-linux-wifi
+pkgbase=linux-t2
 pkgver=5.16
 _srcname=linux-${pkgver}
 pkgrel=1
