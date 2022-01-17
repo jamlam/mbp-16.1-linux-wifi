@@ -3,7 +3,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=linux-t2
-pkgver=5.16
+pkgver=5.16.1
 _srcname=linux-${pkgver}
 pkgrel=1
 pkgdesc='Linux for MBP 16.1 Wifi'
@@ -86,11 +86,7 @@ source=(
   8028-brcmfmac-pcie-Read-the-console-on-init-and-shutdown.patch
   8029-brcmfmac-pcie-Release-firmwares-in-the-brcmf_pcie_se.patch
 
-  
-  9001-bluetooth-add-disable-read-tx-power-quirk.patch
-  9002-mfd-intel-lpss-pci-fix-clock-speed-for-38a8-UART.patch
   efi.patch
-  intel-lpss.patch
 )
 
 validpgpkeys=(
@@ -267,7 +263,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('027d7e8988bb69ac12ee92406c3be1fe13f990b1ca2249e226225cd1573308bb'
+sha256sums=('c7bf36231c6ea1e67283802a005430d14fe3f8a3498c0724ba3439afaf723545'
             'SKIP'
             '7cbba374356a189faac71001c5344ce8f02434684b1ce1accefc0cc4bd6718e5'
             '6b4da532421cac5600d09c0c52742aa52d848af098f7853abe60c02e9d0a3752'
@@ -319,7 +315,4 @@ sha256sums=('027d7e8988bb69ac12ee92406c3be1fe13f990b1ca2249e226225cd1573308bb'
             'f11c4db01c578202b9bdd79e9cd8d3207c10bbabc619a2af0734cc455805ec88'
             '713ce3cbda4c53f319bcfeab7e63e8ecf7938109de024f2d99b443fe664ecbd8'
             'd0dd1ae3b08d9eb39bc094d86022c68f74bf903aac1d202e16853e1f0a5ade93'
-            '31e414978a947bdb71f27ed364c4da73b81fcf1921250cb69ee1bcf2bbd25636'
-            'f2cff107e536fb7331994be0920632b60b3da42e3404a20919dcffcaeec79bdb'
-            '31c3260d35d6c51bff231179e6210876142d4c333d6f4a5963fd8b49f4dc61ab'
-            '22b2695afcc4103743e55ceeda4691a59ddce84a8f16d1d572159dd2ff7f8537')
+            '31c3260d35d6c51bff231179e6210876142d4c333d6f4a5963fd8b49f4dc61ab')
